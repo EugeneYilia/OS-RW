@@ -1,12 +1,15 @@
 # OS-RW
 A OS simulator to solve readers and writers problems.
 This simulator based on the conditions below.
-###1.If one reader is reading the file,other readers also  can read the same file.
-###2.If one writer is writing the file,other writers can't write and other readers can't read at the same time.
-###3.When read request and write request exist at the same time,if write operation doesn't start,it will execute read operation first.This mean the write operation will start after all the read requests are finished.
 
-####Test Result
-#####Situation 1.
+* ### 1.If one reader is reading the file,other readers also  can read the same file.
+* ### 2.If one writer is writing the file,other writers can't write and other readers can't read at the same time.
+* ### 3.When read request and write request exist at the same time,if write operation doesn't start,it will execute read operation first.This mean the write operation will start after all the read requests are finished.
+
+## Test Result
+
+### Situation 1
+
         readerThread1.start();
         readerThread2.start();
         readerThread3.start();
@@ -34,7 +37,8 @@ This simulator based on the conditions below.
         Writer finish writing.
 
 
-#####Situation 2.
+### Situation 2
+
         readerThread1.start();
         writerThread1.start();
         readerThread2.start();
@@ -62,7 +66,8 @@ This simulator based on the conditions below.
         Writer finish writing.
         
 
-#####Situation 3.
+### Situation 3
+
         readerThread1.start();
         readerThread2.start();
         readerThread3.start();
@@ -90,7 +95,8 @@ This simulator based on the conditions below.
         Writer finish writing.
 
 
-#####Situation 4.
+### Situation 4
+
         readerThread1.start();
         readerThread2.start();
         readerThread3.start();
