@@ -68,12 +68,12 @@ This simulator based on the conditions below.
 
 ### Situation 3
 
-        readerThread1.start();
-        readerThread2.start();
-        readerThread3.start();
         writerThread1.start();
+        readerThread1.start();
         writerThread2.start();
-        writerThread3.start();        
+        readerThread2.start();
+        writerThread3.start();
+        readerThread3.start();        
         
         Writer is ready to write.
         Writer is ready to write.
@@ -97,12 +97,12 @@ This simulator based on the conditions below.
 
 ### Situation 4
 
-        readerThread1.start();
-        readerThread2.start();
-        readerThread3.start();
         writerThread1.start();
         writerThread2.start();
         writerThread3.start();
+        readerThread1.start();
+        readerThread2.start();
+        readerThread3.start();
         
         Writer is ready to write.
         Writer is ready to write.
