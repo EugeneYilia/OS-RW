@@ -9,7 +9,7 @@ public class Simulator {
         Thread writerThread2 = new Thread(new Writer());
         Thread writerThread3 = new Thread(new Writer());
 
-        //situation 1.
+        //situation 1..
         /*
         readerThread1.start();
         readerThread2.start();
@@ -20,14 +20,15 @@ public class Simulator {
         */
 
         //situation 2.
-        /*
+/*
         readerThread1.start();
         writerThread1.start();
         readerThread2.start();
         writerThread2.start();
         readerThread3.start();
         writerThread3.start();
-         */
+*/
+
 
         //situation 3.
         /*
@@ -37,16 +38,14 @@ public class Simulator {
         readerThread2.start();
         writerThread3.start();
         readerThread3.start();
-         */
+        */
 
         //situation 4.
-        /*
         writerThread1.start();
         writerThread2.start();
         writerThread3.start();
         readerThread1.start();
         readerThread2.start();
         readerThread3.start();
-         */
     }
 }
